@@ -7,13 +7,13 @@ This project explores **Financial Sentiment Analysis** using various **Machine L
 The dataset used in this project is the **Financial PhraseBank**, sourced from Kaggle:  
 [Financial Sentiment Analysis Dataset on Kaggle](https://www.kaggle.com/datasets/sbhatti/financial-sentiment-analysis)
 
-This dataset originates from the **paper**:  
+This dataset originates from the paper:  
 **"Good Debt or Bad Debt: Detecting Semantic Orientations in Economic Texts"**  
 by **Malo, Pekka, et al.**, *Journal of the Association for Information Science and Technology*, 65(4), 782-796 (2014).
 
 ### **Dataset Details**
 - **Source**: Financial news articles & company press releases  
-- **Size**: 5000 labeled sentences  
+- **Size**: ~5000 labeled sentences  
 - **Classes**: 
   - **Positive**
   - **Negative**
@@ -21,7 +21,7 @@ by **Malo, Pekka, et al.**, *Journal of the Association for Information Science 
 - **Annotation**: Labeled by 16 business experts  
 - **Challenges**:
   - **Imbalanced data** (neutral class dominates)
-  - **Small dataset size** (only 5000 sentences)
+  - **Small dataset size** (only ~5000 sentences)
   - **Domain-specific vocabulary** requiring specialized NLP techniques  
 
 ---
@@ -52,7 +52,7 @@ This project evaluates multiple **ML, DL, and Transformer-based models** for fin
 ## **Key Findings**
 - **Best performing model**: **Fine-Tuned BERT** (76.44% accuracy)  
 - **Logistic Regression with BERT embeddings** (68.39%) outperformed traditional ML models with TF-IDF.  
-- **Deep Learning models (LSTM, GRU, RNN)** showed moderate accuracy but required careful hyperparameter tuning.  
+- **Deep Learning models (LSTM, GRU, RNN)** showed moderate accuracy but require careful hyperparameter tuning.  
 - **Fine-tuning BERT significantly improved sentiment classification**, benefiting from contextual embeddings and transfer learning.  
 - **Computational cost**: Fine-tuning BERT is highly resource-intensive compared to traditional ML models.
 
@@ -72,7 +72,7 @@ This chart illustrates the accuracy of each model, grouped by category.
 - **Scikit-learn** (Machine Learning models)
 - **TensorFlow & Keras** (Deep Learning models)
 - **Hugging Face Transformers** (Fine-tuning BERT)
-- **Matplotlib & Seaborn** (Visualization)
+- **Matplotlib** (Visualization)
 - **KerasTuner** (Hyperparameter Tuning)
 
 ---
